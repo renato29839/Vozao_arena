@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arena Fábrica de Craques - Ceará SC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo" id="logo-admin">ARENA<span>VOZÃO</span></div>
+        <div class="sub-logo">Ceará Sporting Club</div>
+    </header>
+
+    <main class="app-container">
+        <section class="control-panel">
+            <div class="input-group">
+                <label for="data-seletor">DATA</label>
+                <input type="date" id="data-seletor">
+            </div>
+            
+            <div class="input-group">
+                <label for="campo-seletor">ESCOLHA O CAMPO</label>
+                <select id="campo-seletor">
+                    <option value="CAMPO_01">CAMPO 01 (PRINCIPAL)</option>
+                    <option value="CAMPO_02">CAMPO 02 (SECUNDÁRIO)</option>
+                </select>
+            </div>
+
+            <div class="stats">
+                <p id="info-data">Sincronizando...</p>
+            </div>
+        </section>
+
+        <section id="grade-horarios" class="grid-reserva">
+            </section>
+    </main>
+
+    <div id="modal-reserva" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">CONFIRMAR RESERVA</div>
+            <p id="modal-texto"></p>
+            <div class="modal-buttons">
+                <button onclick="confirmarAgendamento()" class="btn-confirmar">ENVIAR NO WHATSAPP</button>
+                <button onclick="fecharModal()" class="btn-cancelar">VOLTAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

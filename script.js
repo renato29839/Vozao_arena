@@ -89,8 +89,7 @@ async function confirmarAgendamento() {
             body: JSON.stringify({ action: "SAVE", chave: chave, nome: nome.toUpperCase() })
         });
 
-        const msg = `Vozão! Reserva Arena Fábrica de Craques.
-        Informações gerais: %0A- Valores: %0AR$ 150,00 – 1 hora de jogo %0A R$ 225,00 – 1 hora e meia de jogo%0A- Disponibilizamos bolas para uso durante a partida.%0AEndereço:%0ARua Júlio César, 445 – Jardim América
+        const msg = `Vozão! Reserva Arena Fábrica de Craques.%0AInformações gerais: %0A- Valores: %0AR$ 150,00 – 1 hora de jogo %0A R$ 225,00 – 1 hora e meia de jogo%0A- Disponibilizamos bolas para uso durante a partida. %0A*Regras*:%0ANão é permitido o uso de roupas, chinelos ou acessórios de outros times.Permitido apenas Brasil ou Ceará. %0AEndereço:%0ARua Júlio César, 445 – Jardim América
         %0A*Campo:* ${campo.replace('_',' ')}%0A*Atleta:* ${nome.toUpperCase()}%0A*Data:* ${data.split('-').reverse().join('/')}%0A*Hora:* ${horarioSelecionado}%0A*Pix:* ${PIX_INFO}`;
         window.open(`https://api.whatsapp.com/send?phone=${WHATSAPP_RESPONSAVEL}&text=${msg}`, '_blank');
         
@@ -131,4 +130,5 @@ seletorData.addEventListener('change', renderizarGrade);
 seletorCampo.addEventListener('change', renderizarGrade);
 
 carregarDados();
+
 

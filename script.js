@@ -1,6 +1,6 @@
 const URL_PLANILHA = "https://script.google.com/macros/s/AKfycbxLmX8w2pyMserEOHwo-R1fnValvvol4OWSGqjnsBmjAwrNvlE_SyaYdrVX2SWQDqz5/exec";
-const WHATSAPP_RESPONSAVEL = "5585999585222";
-const PIX_INFO = "nfservicos@cearasc.com";
+const WHATSAPP_RESPONSAVEL = "55859996475654";
+const PIX_INFO = "xxxxxx";
 const SENHA_ADMIN = "vozao1914";
 
 let modoAdmin = false;
@@ -130,5 +130,6 @@ seletorData.addEventListener('change', renderizarGrade);
 seletorCampo.addEventListener('change', renderizarGrade);
 
 carregarDados();
+
 
 
